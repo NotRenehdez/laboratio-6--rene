@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+char n;
+float n1, n2, n3, promedio;
+
+int main(){
+    cout<<"matematicas-> a\nprogaramacion-> b\nfisica-> c\n";
+    cout <<"ingresase una letra entre la a y c: ";
+    cin>> n;
+    cout<< "Ingrese las notas que posee"<<endl;
+    cout<< "ingrese la nota 1: ";
+    cin>> n1;
+    cout<< "ingrese la nota 2: ";
+    cin>> n2;
+    cout<< "ingrese la nota 3: ";
+    cin>> n3;
+
+    switch(n)
+    {
+        case 'a':
+        cout<< "eligiste matematicas"<<endl;
+        promedio=((n1+n2+n3)/3);
+        cout<<"Resultado: " <<promedio;
+        break;
+        case 'b':
+        cout <<"elegiste programacion"<<endl;
+        promedio=((n1+n2+n3)/3);
+        cout<<"Resultado: " <<promedio;
+        break;
+        case 'c':
+        cout <<"elegiste fisica"<<endl;
+        promedio=((n1+n2+n3)/3);
+        cout<<"Resultado: " <<promedio;
+        break;
+    }
+    if (promedio >= 6)
+    {
+        cout<<" estas aprobado";
+    }
+    else{
+        cout<<" estas reprobado";
+    }
+    return 0;
+}
